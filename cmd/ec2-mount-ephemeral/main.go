@@ -52,7 +52,9 @@ const (
 )
 
 func main() {
-	err := handler_cobra.NewHandler(&Handler{}).Execute()
+	err := handler_cobra.NewHandler(&Handler{
+		Session: &handler.DefaultSession{},
+	}).Execute()
 	if err != nil {
 		panic(errors.WithStack(err))
 	}
@@ -60,7 +62,7 @@ func main() {
 
 // Handler defines the sub-command flags and logic.
 type Handler struct {
-	handler.IO
+	handler.Session
 
 	MountPath string `yaml:"Mount the ephemeral disk at this path"`
 	Force     bool   `yaml:"Disable the default dry-run mode"`
@@ -104,7 +106,7 @@ func (h *Handler) BindFlags(cmd *cobra.Command) []string {
 // Run performs the sub-command logic.
 //
 // It implements cli/handler/cobra.Handler.
-func (h *Handler) Run(ctx context.Context, args []string) {
+func (h *Handler) Run(ctx context.Context, input handler.Input) {
 	dryrun := !h.Force
 
 	paths, err := tp_ec2.FindEphemeralDevices()

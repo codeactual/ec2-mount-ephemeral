@@ -76,4 +76,4 @@ github.com/codeactual/ec2-mount-ephemeral/internal/cage/strings/strings.go		Stri
 github.com/codeactual/ec2-mount-ephemeral/internal/cage/strings/strings.go		truncate		100.0%
 github.com/codeactual/ec2-mount-ephemeral/internal/cage/strings/strings.go		TruncateAppendHint	100.0%
 github.com/codeactual/ec2-mount-ephemeral/internal/cage/strings/strings.go		TruncatePrependHint	100.0%
-69.9%
+67.1%

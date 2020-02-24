@@ -1,4 +1,4 @@
-# ec2-mount-ephemeral [![GoDoc](https://godoc.org/github.com/codeactual/ec2-mount-ephemeral?status.svg)](https://godoc.org/github.com/codeactual/ec2-mount-ephemeral) [![Go Report Card](https://goreportcard.com/badge/github.com/codeactual/ec2-mount-ephemeral)](https://goreportcard.com/report/github.com/codeactual/ec2-mount-ephemeral) [![Build Status](https://travis-ci.org/codeactual/ec2-mount-ephemeral.png)](https://travis-ci.org/codeactual/ec2-mount-ephemeral)
+# ec2-mount-ephemeral [![GoDoc](https://godoc.org/github.com/codeactual/ec2-mount-ephemeral?status.svg)](https://pkg.go.dev/mod/github.com/codeactual/ec2-mount-ephemeral) [![Go Report Card](https://goreportcard.com/badge/github.com/codeactual/ec2-mount-ephemeral)](https://goreportcard.com/report/github.com/codeactual/ec2-mount-ephemeral) [![Build Status](https://travis-ci.org/codeactual/ec2-mount-ephemeral.png)](https://travis-ci.org/codeactual/ec2-mount-ephemeral)
 
 ec2-mount-ephemeral prepares an instance-storage device for immediate use.
 
@@ -34,8 +34,13 @@ ec2-mount-ephemeral --mount-path /instance --force
 ec2-mount-ephemeral --fs-type non_default_ext4 --mount-path /instance --force
 ```
 
-# License
+# Development
+
+## License
 
 [Mozilla Public License Version 2.0](https://www.mozilla.org/en-US/MPL/2.0/) ([About](https://www.mozilla.org/en-US/MPL/), [FAQ](https://www.mozilla.org/en-US/MPL/2.0/FAQ/))
 
-*(Exported from a private monorepo with [transplant](https://github.com/codeactual/transplant).)*
+## Contributing
+
+- Please feel free to submit issues, PRs, questions, and feedback.
+- Although this repository consists of snapshots extracted from a private monorepo using [transplant](https://github.com/codeactual/transplant), PRs are welcome. Standard GitHub workflows are still used.
